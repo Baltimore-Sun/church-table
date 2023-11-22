@@ -1,3 +1,6 @@
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 <style>
     @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
     
@@ -253,7 +256,7 @@
         </style>
     
         <div id="table-body">
-    
+
     
         <button class="button-table" style="font-family: 'PT Sans', sans-serif; font-size:13px" onclick="toggleElements('.table1', '.table')">All</button> 
         <button class="button-table" style="font-family: 'PT Sans', sans-serif; font-size:13px;border-bottom: 3px solid #394757" onclick="toggleElements('.table2', '.table')">New</button>
@@ -265,13 +268,13 @@
             <form action="http://">
                 <div class="mobile-search">
                 <div class="name">
-                    <input class="bar" type="text" id="myInput" onkeyup="toggleFunction()" placeholder="Search by name (John, Michael, Ewanowski, James Avant...)" value="">
+                    <input class="bar" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by name (John, Michael, Ewanowski, James Avant...)" value="">
                 </div>
                 <div class="title">
-                    <input class="bar" type="text" id="myInput2" onkeyup="toggleFunction()" placeholder="Search by title (Father, teacher, brother, deacon...)" value="">
+                    <input class="bar" type="text" id="myInput2" onkeyup="myFunction()" placeholder="Search by title (Father, teacher, brother, deacon...)" value="">
                 </div>
                 <div class="md-asmt">
-                <input class="bar" type="text" id="myInput3" onkeyup="toggleFunction()" placeholder="Search by Maryland place (Baltimore, Mount St. Joseph High School...)" value="">
+                <input class="bar" type="text" id="myInput3" onkeyup="myFunction()" placeholder="Search by Maryland place (Baltimore, Mount St. Joseph High School...)" value="">
             </div>
             </div>
                 <input class="clear" name="clear" type="reset" value="Reset filters and search fields" onclick="window.location.reload(true);">
@@ -280,7 +283,6 @@
         
         
         <div class="tableFixHead">
-
     
             <table id="myTable3" class="table table3" style="display: none" data-name="mytable">
                 <thead>
@@ -3645,7 +3647,9 @@
                   </tr>
                 </tbody>
               </table>
-
+    
+        
+        
         
         </div>
     
@@ -3653,7 +3657,7 @@
         
     <script>
         
-        function toggleFunction() {
+        function myFunction() {
               var inputName, inputAssignment, inputTitle, filterName, filterAssignment, filterTitle, table, tr, td, i, name, title, assignment;
               inputName = document.getElementById("myInput");
               inputTitle = document.getElementById("myInput2");
@@ -3669,9 +3673,9 @@
         
         
               for (i = 0; i < tr.length; i++) {
-                td = tr[i].getElementsByTagName("td")[1];
-                td2 = tr[i].getElementsByTagName("td")[0];
-                td1 = tr[i].getElementsByTagName("td")[4];
+                td = tr[i].getElementsByTagName("td")[2];
+                td2 = tr[i].getElementsByTagName("td")[1];
+                td1 = tr[i].getElementsByTagName("td")[6];
                 
                 if (td && td1 && td2) {
                     name = (td.textContent || td.innerText).toUpperCase();
@@ -3742,3 +3746,4 @@ $(window).on('resize', function() {
 
 
         </script>
+                       
