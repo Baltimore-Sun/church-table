@@ -1,11 +1,8 @@
 <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-
 <style>
     @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
     
         .tableFixHead tr, .tableFixHead td {
-            
             font-size: 13px;
     
         }
@@ -17,14 +14,15 @@
         
         .tableFixHead tr {
             display: grid;
-            grid-template-columns: repeat(6, 2fr);
+            grid-template-columns: .5fr 2fr 2fr 2fr 2fr 3fr;
             cursor: pointer;
             justify-content: flex-start;
             align-items: center;
             font-family: 'PT Sans', sans-serif;
-            grid-template-columns: [one] 5% [two] 12% [three] 19% [four] 12% [five] 29% [six] 23% ;
+            box-sizing: border-box;
             border-bottom: 1px solid black;
             text-align: left;
+            
           }
         
         #table-body {
@@ -52,11 +50,7 @@
               display: none;
             }
     
-        
-        .tableFixHead {
-            height: 600px;
-            overflow-y: scroll;
-        }
+       
     
         .tableFixHead .header {
             position: sticky;
@@ -79,7 +73,6 @@
             display: flex;
             align-items: center;
             max-height: 47.5px;
-            
         }
         
         #table-body #myInput, #myInput2, #myInput3 {
@@ -98,7 +91,7 @@
             margin-top: 2px;
             margin-bottom: 2px;
             font-size: 16px;
-        }
+        } 
         
         #table-body #search .clear {
             margin-top: 25px;
@@ -197,65 +190,18 @@
 }
 
     
-        @media screen and (max-width: 600px) {
-            
-        .tableFixHead tr, .tableFixHead td {
-            font-size: 12px;
-        }
-            
-    
-        .mobile-search {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .tableFixHead tr {
-          grid-template-columns: [one] 5% [two] 15% [three] 16% [four] 18% [five] 26% [six] 20% ;
-        }
-
-    }
-        
-    
-        @media screen and (max-width: 400px) {
-            
-        .tableFixHead tr, .tableFixHead td {
-            font-size: 10px;
-        
-        } 
-    
-        #table-body {
-            margin-left:15px;
-            margin-right:15px;
-        }
-        
-        .button-table {
-            font-size:10px;
-        }
-    
-        #table-body #search .bar {
-            margin-left:0px;
-        }
-        
-        .description li {
-            font-size:14px; 
-        }
-
-        .tableFixHead tr {
-            grid-template-columns: [one] 5% [two] 15% [three] 16% [four] 16% [five] 24% [six] 24% ;
-        }
-
-        .sy-style {
-         margin-left:0px;
-         margin-right:2px;
-        }
-
-
-      }
-        
         </style>
     
         <div id="table-body">
 
+          
+        <ul class="description">
+            <li>Click a button to filter</li>
+            <li>Table auto adjusts to search queries</li>
+            <li>Click a row for details including accusation</li>
+            <li>Click "All without accusation description" for a version without descriptions of accusations.</li>
+        </ul>
+    
     
         <button class="button-table" style="font-family: 'PT Sans', sans-serif; font-size:13px" onclick="toggleElements('.table1', '.table')">All</button> 
         <button class="button-table" style="font-family: 'PT Sans', sans-serif; font-size:13px;border-bottom: 3px solid #394757" onclick="toggleElements('.table2', '.table')">New</button>
@@ -267,13 +213,13 @@
             <form action="http://">
                 <div class="mobile-search">
                 <div class="name">
-                    <input class="bar" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by name (John, Michael, Ewanowski, James Avant...)" value="">
+                    <input class="bar" type="text" id="myInput" onkeyup="toggleFunction()" placeholder="Search by name (John, Michael, Ewanowski, James Avant...)" value="">
                 </div>
                 <div class="title">
-                    <input class="bar" type="text" id="myInput2" onkeyup="myFunction()" placeholder="Search by title (Father, teacher, brother, deacon...)" value="">
+                    <input class="bar" type="text" id="myInput2" onkeyup="toggleFunction()" placeholder="Search by title (Father, teacher, brother, deacon...)" value="">
                 </div>
                 <div class="md-asmt">
-                <input class="bar" type="text" id="myInput3" onkeyup="myFunction()" placeholder="Search by Maryland place (Baltimore, Mount St. Joseph High School...)" value="">
+                <input class="bar" type="text" id="myInput3" onkeyup="toggleFunction()" placeholder="Search by Maryland place (Baltimore, Mount St. Joseph High School...)" value="">
             </div>
             </div>
                 <input class="clear" name="clear" type="reset" value="Reset filters and search fields" onclick="window.location.reload(true);">
@@ -282,6 +228,7 @@
         
         
         <div class="tableFixHead">
+          
     
             <table id="myTable3" class="table table3" style="display: none" data-name="mytable">
                 <thead>
@@ -3647,6 +3594,7 @@
                 </tbody>
               </table>
     
+    
         
         
         
@@ -3656,7 +3604,7 @@
         
     <script>
         
-        function myFunction() {
+        function toggleFunction() {
               var inputName, inputAssignment, inputTitle, filterName, filterAssignment, filterTitle, table, tr, td, i, name, title, assignment;
               inputName = document.getElementById("myInput");
               inputTitle = document.getElementById("myInput2");
@@ -3672,9 +3620,9 @@
         
         
               for (i = 0; i < tr.length; i++) {
-                td = tr[i].getElementsByTagName("td")[2];
-                td2 = tr[i].getElementsByTagName("td")[1];
-                td1 = tr[i].getElementsByTagName("td")[6];
+                td = tr[i].getElementsByTagName("td")[1];
+                td2 = tr[i].getElementsByTagName("td")[0];
+                td1 = tr[i].getElementsByTagName("td")[4];
                 
                 if (td && td1 && td2) {
                     name = (td.textContent || td.innerText).toUpperCase();
@@ -3745,3 +3693,4 @@ $(window).on('resize', function() {
 
 
         </script>
+
