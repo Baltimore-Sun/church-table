@@ -1,10 +1,11 @@
 <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
     @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
     
         .tableFixHead tr, .tableFixHead td {
             font-size: 13px;
-    
         }
 
         .tableFixHead tr, .tableFixHead td, .tableFixHead th {
@@ -3681,17 +3682,9 @@ $('.rotate').click(
 });
 
 
-$(window).on('resize', function() {
-    if($(window).width() < 400) {
-        $('.expanded-row-content').removeClass('expanded-row-content');
-        $('.expanded-row-content').removeClass('hide-row');
-        $('.mobile-view').addClass('expanded-row-content');
-        $('.mobile-view').addClass('hide-row');
-    }
-})
+
 
 
 
         </script>
-
 
