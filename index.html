@@ -443,6 +443,14 @@ $('.rotate').click(
   function(event){$(this).find('.sy2').toggleClass('hidden');
 });
 
+    $(window).on('resize', function() {
+    if($(window).width() < 400) {
+        $('.expanded-row-content').removeClass('expanded-row-content');
+        $('.expanded-row-content').removeClass('hide-row');
+        $('.mobile-view').addClass('expanded-row-content');
+        $('.mobile-view').addClass('hide-row');
+    }
+})
 
 
       </script>
