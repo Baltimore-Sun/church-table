@@ -468,14 +468,14 @@ $('.rotate').click(
 });
 
 $(window).on('resize', function() {
-    if($(window).width() < 500) {
+    if($(window).width() < 501) {
         $('.hyperlinks').removeClass('mobile');
         $('.desktop').addClass('mobile');
     }
 })
 
 $(window).on('resize', function() {
-    if($(window).width() > 499) {
+    if($(window).width() > 500) {
         $('.hyperlinks').addClass('mobile');
         $('.desktop').removeClass('mobile');
     }
