@@ -164,61 +164,63 @@ background: none;
 background: none;
 }
 
-
 @media screen and (max-width: 600px) {
             
-        .tableFixHead tr, .tableFixHead td {
-            font-size: 12px;
+            .tableFixHead tr, .tableFixHead td {
+                font-size: 12px;
+            }
+                
+        
+            .mobile-search {
+                display: flex;
+                flex-direction: column;
+            }
+    
+            .tableFixHead tr {
+              grid-template-columns: [one] 5% [two] 15% [three] 16% [four] 18% [five] 26% [six] 20% ;
+            }
+    
         }
             
-    
-        .mobile-search {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .tableFixHead tr {
-          grid-template-columns: [one] 5% [two] 15% [three] 16% [four] 18% [five] 26% [six] 20% ;
-        }
-
-    }
         
-    
-        @media screen and (max-width: 400px) {
+            @media screen and (max-width: 400px) {
+                
+            .tableFixHead tr, .tableFixHead td {
+                font-size: 10px;
             
-        .tableFixHead tr, .tableFixHead td {
-            font-size: 10px;
+            } 
         
-        } 
+            #table-body {
+                margin-left:15px;
+                margin-right:15px;
+            }
+            
+            .button-table {
+                font-size:10px;
+            }
+        
+            #table-body #search .bar {
+                margin-left:0px;
+            }
+            
+            .description li {
+                font-size:14px; 
+            }
     
-        #table-body {
-            margin-left:15px;
-            margin-right:15px;
-        }
-        
-        .button-table {
-            font-size:10px;
-        }
+            .tableFixHead tr {
+                grid-template-columns: [one] 5% [two] 15% [three] 16% [four] 16% [five] 24% [six] 24% ;
+            }
     
-        #table-body #search .bar {
-            margin-left:0px;
-        }
-        
-        .description li {
-            font-size:14px; 
-        }
-
-        .tableFixHead tr {
-            grid-template-columns: [one] 5% [two] 15% [three] 16% [four] 16% [five] 24% [six] 24% ;
-        }
-
-        .sy-style {
-         margin-left:0px;
-         margin-right:2px;
-        }
+            .sy-style {
+             margin-left:0px;
+             margin-right:2px;
+            }
+    
+    
+          }
 
 
-      }
+
   
       </style>
   
@@ -496,14 +498,6 @@ $('.rotate').click(
   function(event){$(this).find('.sy2').toggleClass('hidden');
 });
 
-    $(window).on('resize', function() {
-    if($(window).width() < 400) {
-        $('.expanded-row-content').removeClass('expanded-row-content');
-        $('.expanded-row-content').removeClass('hide-row');
-        $('.mobile-view').addClass('expanded-row-content');
-        $('.mobile-view').addClass('hide-row');
-    }
-})
 
 
       </script>
