@@ -171,7 +171,7 @@ background: none;
 
 .mobile {display: none;}
             
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
                 
             .tableFixHead tr, .tableFixHead td {
                 font-size: 10px;
@@ -468,14 +468,14 @@ $('.rotate').click(
 });
 
 $(window).on('resize', function() {
-    if($(window).width() < 501) {
+    if($(window).width() < 601) {
         $('.hyperlinks').removeClass('mobile');
         $('.desktop').addClass('mobile');
     }
 })
 
 $(window).on('resize', function() {
-    if($(window).width() > 500) {
+    if($(window).width() > 600) {
         $('.hyperlinks').addClass('mobile');
         $('.desktop').removeClass('mobile');
     }
