@@ -475,7 +475,7 @@ $('.rotate').click(
 });
 
 $(window).on('resize', function() {
-    if($(window).width() < 501) {
+    if($(window).width() < 601) {
         $('.hyperlinks').removeClass('mobile');
         $('.desktop').addClass('mobile');
         $('tr').addClass('font');
@@ -486,7 +486,7 @@ $(window).on('resize', function() {
 })
 
 $(window).on('resize', function() {
-    if($(window).width() > 500) {
+    if($(window).width() > 600) {
         $('.hyperlinks').addClass('mobile');
         $('.desktop').removeClass('mobile');
         $('tr').removeClass('font');
