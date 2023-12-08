@@ -13,19 +13,19 @@
   
       }
       
-      .tableFixHead tr, .tableFixHead th {
+     .tableFixHead tr, .tableFixHead th {
         display: grid;
           grid-template-columns: .5fr 2fr 2fr 2fr 2fr 3fr;
           grid-auto-rows: max-content;
           cursor: pointer;
-          justify-content: flex-start;
           align-items: center;
           font-family: 'PT Sans', sans-serif;
           box-sizing: border-box;
           border-bottom: 1px solid black;
           text-align: left;
-          
         }
+
+       
       
       #table-body {
           font-family: 'PT Sans', sans-serif;
@@ -70,7 +70,6 @@
   
       .tableFixHead .header {
         position: sticky;
-          justify-content:flex-start;
           top:0;
           background-color: black;
           color: white;
@@ -184,6 +183,11 @@ background: none;
 .font {
                 font-size:8.5px;
             }
+
+.font1 {
+                font-size:8.5px;
+                
+            }
         
             .change {
               grid-column:  5 / span 2;
@@ -191,7 +195,7 @@ background: none;
             }  
 
 
-.mobile {display: none;}
+.mobile {display: none !important;}
             
  /* @media screen and (max-width: 500px) {
                 
@@ -250,12 +254,12 @@ background: none;
           <table id="myTable3" class="table table3" style="display: none" data-name="mytable">
               <thead>
                     <tr class="header">
-                      <th>  </th>
+                      <th> a </th>
                       <th>z</th>
                   <th>y</th>
                   <th>x</th>
                   <th>w</th>
-                  <th class="desktop">v</th>
+                  <th class="desktop mobile">v</th>
                 </tr>
               </thead>
               <tbody>
@@ -265,10 +269,10 @@ background: none;
                   <td>sit amet, consectetur </td>
                   <td>adipiscing elit</td>
                   <td class="item2">, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                  <td class="desktop"><span><a href="" target="_blank">only see mee when on desktop</a></span>
+                  <td class="desktop mobile"><span><a href="" target="_blank">only see mee when on desktop</a></span>
                   </td>
                   <td class="expanded-row-content hide-row">
-                    <span class="hyperlinks mobile"><a href="" target="_blank">only see mee when on mobile</a></span><br />
+                    <span class="hyperlinks"><a href="" target="_blank">only see mee when on mobile</a></span><br />
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
                 </td>
                 </tr>
@@ -279,10 +283,10 @@ background: none;
               <td>sit amet, consectetur </td>
               <td>adipiscing elit</td>
               <td class="item2">, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-              <td class="desktop"><span><a href="" target="_blank">only see mee when on desktop</a></span>
+              <td class="desktop mobile"><span><a href="" target="_blank">only see mee when on desktop</a></span>
               </td>
               <td class="expanded-row-content hide-row">
-                <span class="hyperlinks mobile"><a href="" target="_blank">only see mee when on mobile</a></span><br />
+                <span class="hyperlinks"><a href="" target="_blank">only see mee when on mobile</a></span><br />
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
             </td>
             </tr>
@@ -449,8 +453,8 @@ $(window).on('resize', function() {
         $('.hyperlinks').removeClass('mobile');
         $('.desktop').addClass('mobile');
         $('tr').addClass('font');
-        $('td').addClass('font');
-        $('.button-table').addClass('font');
+        $('td').addClass('font1');
+        $('.button-table').addClass('font1');
         $('.item2').addClass('change');
     }
 })
@@ -460,8 +464,30 @@ $(window).on('resize', function() {
         $('.hyperlinks').addClass('mobile');
         $('.desktop').removeClass('mobile');
         $('tr').removeClass('font');
-        $('td').removeClass('font');
-        $('.button-table').removeClass('font');
+        $('td').removeClass('font1');
+        $('.button-table').removeClass('font1');
+        $('.item2').removeClass('change');
+    }
+})
+
+$(window).on('load', function() {
+    if($(window).width() < 601) {
+        $('.hyperlinks').removeClass('mobile');
+        $('.desktop').addClass('mobile');
+        $('tr').addClass('font');
+        $('td').addClass('font1');
+        $('.button-table').addClass('font1');
+        $('.item2').addClass('change');
+    }
+})
+
+$(window).on('load', function() {
+    if($(window).width() > 600) {
+        $('.hyperlinks').addClass('mobile');
+        $('.desktop').removeClass('mobile');
+        $('tr').removeClass('font');
+        $('td').removeClass('font1');
+        $('.button-table').removeClass('font1');
         $('.item2').removeClass('change');
     }
 })
