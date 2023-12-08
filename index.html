@@ -166,12 +166,18 @@ background: none;
 }
 
 
-
+.font {
+                font-size:10px;
+            }
+        
+            .change {
+              grid-column:  5 / span 2;
+            }  
 
 
 .mobile {display: none;}
             
-  @media screen and (max-width: 600px) {
+ /* @media screen and (max-width: 500px) {
                 
             .tableFixHead tr, .tableFixHead td {
                 font-size: 10px;
@@ -186,7 +192,7 @@ background: none;
             }  
     
     
-          } 
+          } */
 
 
 
@@ -468,16 +474,24 @@ $('.rotate').click(
 });
 
 $(window).on('resize', function() {
-    if($(window).width() < 601) {
+    if($(window).width() < 501) {
         $('.hyperlinks').removeClass('mobile');
         $('.desktop').addClass('mobile');
+        $('tr').addClass('font');
+        $('td').addClass('font');
+        $('.button-table').addClass('font');
+        $('.item2').addClass('change');
     }
 })
 
 $(window).on('resize', function() {
-    if($(window).width() > 600) {
+    if($(window).width() > 500) {
         $('.hyperlinks').addClass('mobile');
         $('.desktop').removeClass('mobile');
+        $('tr').removeClass('font');
+        $('td').removeClass('font');
+        $('.button-table').removeClass('font');
+        $('.item2').removeClass('change');
     }
 })
 
