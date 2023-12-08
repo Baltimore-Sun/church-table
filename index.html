@@ -167,28 +167,17 @@ background: none;
 
 
 .mobile {display: none;}
-
-@media screen and (max-width: 600px) {
-            
-            .tableFixHead tr, .tableFixHead td {
-                font-size: 12px;
-            }
-                
-        
-            .mobile-search {
-                display: flex;
-                flex-direction: column;
-            }
-    
-            
-    
-        }
             
         
             @media screen and (max-width: 350px) {
+
+              .mobile-search {
+                display: flex;
+                flex-direction: column;
+            }
                 
             .tableFixHead tr, .tableFixHead td {
-                font-size: 10px;
+                font-size: 9px;
             
             } 
 
@@ -213,10 +202,7 @@ background: none;
                 font-size:14px; 
             }
     
-          
-           /* .tableFixHead .item1 {
-              grid-area: 2 / 1 / span 1 / 8;
-            } */
+
 
             .tableFixHead .item2 {
               grid-column:  5 / span 2;
@@ -511,19 +497,7 @@ $('.rotate').click(
   function(event){$(this).find('.sy2').toggleClass('hidden');
 });
 
-$(window).on('resize', function() {
-    if($(window).width() < 350) {
-        $('.hyperlinks').removeClass('mobile');
-        $('.desktop').addClass('mobile');
-    }
-})
 
-$(window).on('resize', function() {
-    if($(window).width() > 350) {
-        $('.hyperlinks').addClass('mobile');
-        $('.desktop').removeClass('mobile');
-    }
-})
 
 
       </script>
