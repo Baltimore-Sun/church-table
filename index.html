@@ -1,4 +1,5 @@
 <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -12,7 +13,7 @@
   
       }
       
-      .tableFixHead tr {
+      .tableFixHead tr, .tableFixHead th {
         display: grid;
           grid-template-columns: .5fr 2fr 2fr 2fr 2fr 3fr;
           cursor: pointer;
@@ -53,9 +54,9 @@
      
   
       .tableFixHead .header {
-          position: sticky;
+          display: flex;
+          justify-content:flex-start;
           top:0;
-          text-align: left;
           background-color: black;
           color: white;
           
@@ -164,6 +165,9 @@ background: none;
 background: none;
 }
 
+
+.mobile {display: none;}
+
 @media screen and (max-width: 600px) {
             
             .tableFixHead tr, .tableFixHead td {
@@ -176,9 +180,7 @@ background: none;
                 flex-direction: column;
             }
     
-            .tableFixHead tr {
-              grid-template-columns: [one] 5% [two] 15% [three] 16% [four] 18% [five] 26% [six] 20% ;
-            }
+            
     
         }
             
@@ -189,6 +191,10 @@ background: none;
                 font-size: 10px;
             
             } 
+
+            /* .tableFixHead thead {
+              display: none;
+            } */
         
             #table-body {
                 margin-left:15px;
@@ -207,9 +213,16 @@ background: none;
                 font-size:14px; 
             }
     
-            .tableFixHead tr {
-                grid-template-columns: [one] 5% [two] 15% [three] 16% [four] 16% [five] 24% [six] 24% ;
-            }
+          
+           /* .tableFixHead .item1 {
+              grid-area: 2 / 1 / span 1 / 8;
+            } */
+
+            .tableFixHead .item2 {
+              grid-column:  5 / span 2;
+            }  
+
+
     
             .sy-style {
              margin-left:0px;
@@ -259,12 +272,12 @@ background: none;
           <table id="myTable3" class="table table3" style="display: none" data-name="mytable">
               <thead>
                     <tr class="header">
-                      <th style="width: 5%;">  </th>
-                      <th style="width: 12%;">z</th>
-                  <th style="width: 19%;"y></th>
-                  <th style="width: 12%;">x</th>
-                  <th style="width: 29%;">w</th>
-                  <th style="width: 23%;">v</th>
+                      <th>  </th>
+                      <th>z</th>
+                  <th>y</th>
+                  <th>x</th>
+                  <th>w</th>
+                  <th class="desktop">v</th>
                 </tr>
               </thead>
               <tbody>
@@ -273,13 +286,13 @@ background: none;
                       <td>Lorem ipsum</td>
                   <td>sit amet, consectetur </td>
                   <td>adipiscing elit</td>
-                  <td>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                  <td>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </td>
-                  <td class="expanded-row-content hide-row">
-                    <span><a href="" target="_blank">quis nostrud exercitation</a></span>
-                    <span><a href="" target="_blank">quis nostrud exercitation</a></span>
-                    <span><a href="" target="_blank">quis nostrud exercitation</a></span>
+                  <td class="item2">, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                  <td class="desktop"><span><a href="" target="_blank">only see mee when on desktop</a></span>
                   </td>
+                  <td class="expanded-row-content hide-row">
+                    <span class="hyperlinks mobile"><a href="" target="_blank">only see mee when on mobile</a></span><br />
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                </td>
                 </tr>
                 <tr onClick='toggleRow(this)' class="rotate">
                       <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
@@ -498,6 +511,19 @@ $('.rotate').click(
   function(event){$(this).find('.sy2').toggleClass('hidden');
 });
 
+$(window).on('resize', function() {
+    if($(window).width() < 400) {
+        $('.hyperlinks').removeClass('mobile');
+        $('.desktop').addClass('mobile');
+    }
+})
+
+$(window).on('resize', function() {
+    if($(window).width() > 400) {
+        $('.hyperlinks').addClass('mobile');
+        $('.desktop').removeClass('mobile');
+    }
+})
 
 
       </script>
