@@ -4,18 +4,20 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
   
-      .tableFixHead tr, .tableFixHead td {
+      .tableFixHead td, .tableFixHead th {
           font-size: 13px;
       }
 
       .tableFixHead tr, .tableFixHead td, .tableFixHead th {
-          padding: 7px;
+          padding: 5px;
   
       }
       
-     .tableFixHead tr, .tableFixHead th {
+     .tableFixHead tr {
         display: grid;
-          grid-template-columns: .5fr 2fr 2fr 2fr 2fr 3fr;
+        grid-template-columns: 5% 16% 19% 17% 23% 20%;
+/* grid-template-columns: .5fr 2fr 2fr 2fr 2fr 3fr; */
+        grid-column-gap: 2px;
           grid-auto-rows: max-content;
           cursor: pointer;
           align-items: center;
@@ -30,13 +32,14 @@
       #table-body {
           font-family: 'PT Sans', sans-serif;
           display: block;
-          width: 100%;
+          position: relative; 
 
       }
       
       .tableFixHead tbody tr:hover {
           cursor: pointer;
           background-color: #EEF1F5;
+
       }
       
       .tableFixHead tbody tr {
@@ -51,15 +54,11 @@
           }
 
           .tableFixHead {
-            height: 600px;
             overflow-y: scroll;
           
         
         }
 
-        .table {
-          max-width: 100%;
-        }
 
  
       .hide-row {
@@ -69,8 +68,6 @@
      
   
       .tableFixHead .header {
-        position: sticky;
-          top:0;
           background-color: black;
           color: white;
           
@@ -197,12 +194,12 @@ background: none;
 
 .mobile {display: none !important;}
             
- /* @media screen and (max-width: 500px) {
+ @media screen and (max-width: 500px) {
                 
             .tableFixHead tr, .tableFixHead td {
                 font-size: 10px;
             } 
-
+/* 
             .button-table {
                 font-size:10px;
             }
@@ -212,8 +209,9 @@ background: none;
             }  
     
     
-          } */
+           */}
 
+ 
 
 
   
@@ -254,7 +252,7 @@ background: none;
           <table id="myTable3" class="table table3" style="display: none" data-name="mytable">
               <thead>
                     <tr class="header">
-                      <th> a </th>
+                      <th> </th>
                       <th>z</th>
                   <th>y</th>
                   <th>x</th>
