@@ -16,7 +16,7 @@
      .tableFixHead tr {
         display: grid;
         grid-template-columns: 5% 16% 19% 17% 23% 20%;
-/* grid-template-columns: .5fr 2fr 2fr 2fr 2fr 3fr; */
+grid-template-columns: .5fr 2fr 2fr 2fr 2fr 3fr; 
         grid-column-gap: 2px;
           grid-auto-rows: max-content;
           cursor: pointer;
@@ -27,6 +27,10 @@
           text-align: left;
         }
 
+
+        .table {
+          border: 1px solid black;
+        }
        
       
       #table-body {
@@ -36,7 +40,7 @@
 
       }
       
-      .tableFixHead tbody tr:hover {
+      .tableFixHead tbody tr:hover { 
           cursor: pointer;
           background-color: #EEF1F5;
 
@@ -211,13 +215,13 @@ background: none;
           <form action="http://">
               <div class="mobile-search">
               <div class="name">
-                  <input class="bar" type="text" id="myInput" onkeyup="toggleFunction()" placeholder="Search" value="">
+                  <input class="bar" type="text" id="myInput" onkeyup="toggleFunction()" placeholder="Search name" value="">
               </div>
               <div class="title">
-                  <input class="bar" type="text" id="myInput2" onkeyup="toggleFunction()" placeholder="Search" value="">
+                  <input class="bar" type="text" id="myInput2" onkeyup="toggleFunction()" placeholder="Search title" value="">
               </div>
               <div class="md-asmt">
-              <input class="bar" type="text" id="myInput3" onkeyup="toggleFunction()" placeholder="Search" value="">
+              <input class="bar" type="text" id="myInput3" onkeyup="toggleFunction()" placeholder="Search known assignments" value="">
           </div>
           </div>
               <input class="clear" name="clear" type="reset" value="Reset filters and search fields" onclick="window.location.reload(true);">
@@ -227,119 +231,1225 @@ background: none;
       
       <div class="tableFixHead">
         
-<table id="myTable3" class="table table3" style="display: none" data-name="mytable">
-              <thead>
-                    <tr class="header">
-                      <th> </th>
-                      <th>z</th>
-                  <th>y</th>
-                  <th>x</th>
-                  <th>w</th>
-                  <th class="desktop mobile">v</th>
-                </tr>
-              </thead>
+<table id="myTable1" class="table table1" data-name="mytable">
+            
               <tbody>
                 <tr onClick='toggleRow(this)' class="rotate">
                       <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
-                      <td>Lorem ipsum</td>
-                  <td>sit amet, consectetur </td>
-                  <td>adipiscing elit</td>
-                  <td class="item2">, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                  <td class="desktop mobile"><span><a href="" target="_blank">only see mee when on desktop</a></span>
+                      <td><strong>TITLE: </strong>orem ipsum</td>
+                  <td><strong>NAME: </strong>sit amet, consectetur </td>
+                  <td><strong>BORN: </strong>adipiscing elit</td>
+                  <td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                  <td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
                   </td>
                   <td class="expanded-row-content hide-row">
-                    <span class="hyperlinks"><a href="" target="_blank">only see mee when on mobile</a></span><br />
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-                </td>
+                    <span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+                    <strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                    <br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                    <br /><br />
+                
+                  </td>
                 </tr>
 
                 <tr onClick='toggleRow(this)' class="rotate">
                   <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
-                  <td>Lorem ipsum</td>
-              <td>sit amet, consectetur </td>
-              <td>adipiscing elit</td>
-              <td class="item2">, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-              <td class="desktop mobile"><span><a href="" target="_blank">only see mee when on desktop</a></span>
+                  <td><strong>TITLE: </strong>orem ipsum</td>
+              <td><strong>NAME: </strong>sit amet, consectetur </td>
+              <td><strong>BORN: </strong>adipiscing elit</td>
+              <td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+              <td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
               </td>
               <td class="expanded-row-content hide-row">
-                <span class="hyperlinks"><a href="" target="_blank">only see mee when on mobile</a></span><br />
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-            </td>
+                <span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+                <strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                <br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                <br /><br />
+            
+              </td>
             </tr>
 
             <tr onClick='toggleRow(this)' class="rotate">
               <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
-              <td>Lorem ipsum</td>
-          <td>sit amet, consectetur </td>
-          <td>adipiscing elit</td>
-          <td class="item2">, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-          <td class="desktop"><span><a href="" target="_blank">only see mee when on desktop</a></span>
+              <td><strong>TITLE: </strong>orem ipsum</td>
+          <td><strong>NAME: </strong>sit amet, consectetur </td>
+          <td><strong>BORN: </strong>adipiscing elit</td>
+          <td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+          <td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
           </td>
           <td class="expanded-row-content hide-row">
-            <span class="hyperlinks mobile"><a href="" target="_blank">only see mee when on mobile</a></span><br />
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-        </td>
+            <span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+            <strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+            <br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+            <br /><br />
+        
+          </td>
         </tr>
 
         <tr onClick='toggleRow(this)' class="rotate">
           <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
-          <td>Lorem ipsum</td>
-      <td>sit amet, consectetur </td>
-      <td>adipiscing elit</td>
-      <td class="item2">, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-      <td class="desktop"><span><a href="" target="_blank">only see mee when on desktop</a></span>
+          <td><strong>TITLE: </strong>orem ipsum</td>
+      <td><strong>NAME: </strong>sit amet, consectetur </td>
+      <td><strong>BORN: </strong>adipiscing elit</td>
+      <td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+      <td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
       </td>
       <td class="expanded-row-content hide-row">
-        <span class="hyperlinks mobile"><a href="" target="_blank">only see mee when on mobile</a></span><br />
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-    </td>
+        <span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+        <strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+        <br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+        <br /><br />
+    
+      </td>
     </tr>
 
     <tr onClick='toggleRow(this)' class="rotate">
       <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
-      <td>Lorem ipsum</td>
-  <td>sit amet, consectetur </td>
-  <td>adipiscing elit</td>
-  <td class="item2">, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-  <td class="desktop"><span><a href="" target="_blank">only see mee when on desktop</a></span>
+      <td><strong>TITLE: </strong>orem ipsum</td>
+  <td><strong>NAME: </strong>sit amet, consectetur </td>
+  <td><strong>BORN: </strong>adipiscing elit</td>
+  <td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+  <td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
   </td>
   <td class="expanded-row-content hide-row">
-    <span class="hyperlinks mobile"><a href="" target="_blank">only see mee when on mobile</a></span><br />
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+    <span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+    <strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+    <br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+    <br /><br />
+
+  </td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
 </td>
 </tr>
 
 <tr onClick='toggleRow(this)' class="rotate">
   <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
-  <td>Lorem ipsum</td>
-<td>sit amet, consectetur </td>
-<td>adipiscing elit</td>
-<td class="item2">, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-<td class="desktop"><span><a href="" target="_blank">only see mee when on desktop</a></span>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
 </td>
 <td class="expanded-row-content hide-row">
-<span class="hyperlinks mobile"><a href="" target="_blank">only see mee when on mobile</a></span><br />
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
 </td>
 </tr>
 
 <tr onClick='toggleRow(this)' class="rotate">
   <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
-  <td>Lorem ipsum</td>
-<td>sit amet, consectetur </td>
-<td>adipiscing elit</td>
-<td class="item2">, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-<td class="desktop"><span><a href="" target="_blank">only see mee when on desktop</a></span>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
 </td>
 <td class="expanded-row-content hide-row">
-<span class="hyperlinks mobile"><a href="" target="_blank">only see mee when on mobile</a></span><br />
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+                
+              </tbody>
+            </table>
+
+            <table id="myTable2" class="table table2" style="display: none" data-name="mytable">
+            
+              <tbody>
+                <tr onClick='toggleRow(this)' class="rotate">
+                      <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+                      <td><strong>TITLE: </strong>orem ipsum</td>
+                  <td><strong>NAME: </strong>sit amet, consectetur </td>
+                  <td><strong>BORN: </strong>adipiscing elit</td>
+                  <td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                  <td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+                  </td>
+                  <td class="expanded-row-content hide-row">
+                    <span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+                    <strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                    <br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                    <br /><br />
+                
+                  </td>
+                </tr>
+
+                <tr onClick='toggleRow(this)' class="rotate">
+                  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+                  <td><strong>TITLE: </strong>orem ipsum</td>
+              <td><strong>NAME: </strong>sit amet, consectetur </td>
+              <td><strong>BORN: </strong>adipiscing elit</td>
+              <td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+              <td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+              </td>
+              <td class="expanded-row-content hide-row">
+                <span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+                <strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                <br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                <br /><br />
+            
+              </td>
+            </tr>
+
+            <tr onClick='toggleRow(this)' class="rotate">
+              <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+              <td><strong>TITLE: </strong>orem ipsum</td>
+          <td><strong>NAME: </strong>sit amet, consectetur </td>
+          <td><strong>BORN: </strong>adipiscing elit</td>
+          <td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+          <td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+          </td>
+          <td class="expanded-row-content hide-row">
+            <span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+            <strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+            <br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+            <br /><br />
+        
+          </td>
+        </tr>
+
+        <tr onClick='toggleRow(this)' class="rotate">
+          <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+          <td><strong>TITLE: </strong>orem ipsum</td>
+      <td><strong>NAME: </strong>sit amet, consectetur </td>
+      <td><strong>BORN: </strong>adipiscing elit</td>
+      <td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+      <td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+      </td>
+      <td class="expanded-row-content hide-row">
+        <span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+        <strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+        <br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+        <br /><br />
+    
+      </td>
+    </tr>
+
+    <tr onClick='toggleRow(this)' class="rotate">
+      <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+      <td><strong>TITLE: </strong>orem ipsum</td>
+  <td><strong>NAME: </strong>sit amet, consectetur </td>
+  <td><strong>BORN: </strong>adipiscing elit</td>
+  <td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+  <td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+  </td>
+  <td class="expanded-row-content hide-row">
+    <span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+    <strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+    <br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+    <br /><br />
+
+  </td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
 </td>
 </tr>
                 
               </tbody>
             </table>
       
+            <table id="myTable3" class="table table3" style="display: none" data-name="mytable">
+            
+              <tbody>
+                <tr onClick='toggleRow(this)' class="rotate">
+                      <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+                      <td><strong>TITLE: </strong>orem ipsum</td>
+                  <td><strong>NAME: </strong>sit amet, consectetur </td>
+                  <td><strong>BORN: </strong>adipiscing elit</td>
+                  <td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                  <td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+                  </td>
+                  <td class="expanded-row-content hide-row">
+                    <span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+                    <strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                    <br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                    <br /><br />
+                
+                  </td>
+                </tr>
+
+                <tr onClick='toggleRow(this)' class="rotate">
+                  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+                  <td><strong>TITLE: </strong>orem ipsum</td>
+              <td><strong>NAME: </strong>sit amet, consectetur </td>
+              <td><strong>BORN: </strong>adipiscing elit</td>
+              <td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+              <td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+              </td>
+              <td class="expanded-row-content hide-row">
+                <span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+                <strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                <br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                <br /><br />
+            
+              </td>
+            </tr>
+
+            <tr onClick='toggleRow(this)' class="rotate">
+              <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+              <td><strong>TITLE: </strong>orem ipsum</td>
+          <td><strong>NAME: </strong>sit amet, consectetur </td>
+          <td><strong>BORN: </strong>adipiscing elit</td>
+          <td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+          <td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+          </td>
+          <td class="expanded-row-content hide-row">
+            <span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+            <strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+            <br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+            <br /><br />
+        
+          </td>
+        </tr>
+
+        <tr onClick='toggleRow(this)' class="rotate">
+          <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+          <td><strong>TITLE: </strong>orem ipsum</td>
+      <td><strong>NAME: </strong>sit amet, consectetur </td>
+      <td><strong>BORN: </strong>adipiscing elit</td>
+      <td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+      <td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+      </td>
+      <td class="expanded-row-content hide-row">
+        <span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+        <strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+        <br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+        <br /><br />
+    
+      </td>
+    </tr>
+
+    <tr onClick='toggleRow(this)' class="rotate">
+      <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+      <td><strong>TITLE: </strong>orem ipsum</td>
+  <td><strong>NAME: </strong>sit amet, consectetur </td>
+  <td><strong>BORN: </strong>adipiscing elit</td>
+  <td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+  <td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+  </td>
+  <td class="expanded-row-content hide-row">
+    <span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+    <strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+    <br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+    <br /><br />
+
+  </td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+                
+              </tbody>
+            </table>
+
+            <table id="myTable4" class="table table4" style="display: none" data-name="mytable">
+            
+              <tbody>
+                <tr onClick='toggleRow(this)' class="rotate">
+                      <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+                      <td><strong>TITLE: </strong>orem ipsum</td>
+                  <td><strong>NAME: </strong>sit amet, consectetur </td>
+                  <td><strong>BORN: </strong>adipiscing elit</td>
+                  <td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                  <td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+                  </td>
+                  <td class="expanded-row-content hide-row">
+                    <span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+                    <strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                    <br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                    <br /><br />
+                
+                  </td>
+                </tr>
+
+                <tr onClick='toggleRow(this)' class="rotate">
+                  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+                  <td><strong>TITLE: </strong>orem ipsum</td>
+              <td><strong>NAME: </strong>sit amet, consectetur </td>
+              <td><strong>BORN: </strong>adipiscing elit</td>
+              <td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+              <td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+              </td>
+              <td class="expanded-row-content hide-row">
+                <span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+                <strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                <br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                <br /><br />
+            
+              </td>
+            </tr>
+
+            <tr onClick='toggleRow(this)' class="rotate">
+              <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+              <td><strong>TITLE: </strong>orem ipsum</td>
+          <td><strong>NAME: </strong>sit amet, consectetur </td>
+          <td><strong>BORN: </strong>adipiscing elit</td>
+          <td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+          <td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+          </td>
+          <td class="expanded-row-content hide-row">
+            <span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+            <strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+            <br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+            <br /><br />
+        
+          </td>
+        </tr>
+
+        <tr onClick='toggleRow(this)' class="rotate">
+          <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+          <td><strong>TITLE: </strong>orem ipsum</td>
+      <td><strong>NAME: </strong>sit amet, consectetur </td>
+      <td><strong>BORN: </strong>adipiscing elit</td>
+      <td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+      <td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+      </td>
+      <td class="expanded-row-content hide-row">
+        <span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+        <strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+        <br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+        <br /><br />
+    
+      </td>
+    </tr>
+
+    <tr onClick='toggleRow(this)' class="rotate">
+      <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+      <td><strong>TITLE: </strong>orem ipsum</td>
+  <td><strong>NAME: </strong>sit amet, consectetur </td>
+  <td><strong>BORN: </strong>adipiscing elit</td>
+  <td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+  <td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+  </td>
+  <td class="expanded-row-content hide-row">
+    <span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+    <strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+    <br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+    <br /><br />
+
+  </td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+                
+              </tbody>
+            </table>
+
+            <table id="myTable5" class="table table5" style="display: none" data-name="mytable">
+            
+              <tbody>
+                <tr onClick='toggleRow(this)' class="rotate">
+                      <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+                      <td><strong>TITLE: </strong>orem ipsum</td>
+                  <td><strong>NAME: </strong>sit amet, consectetur </td>
+                  <td><strong>BORN: </strong>adipiscing elit</td>
+                  <td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                  <td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+                  </td>
+                  <td class="expanded-row-content hide-row">
+                    <span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+                    <strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                    <br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                    <br /><br />
+                
+                  </td>
+                </tr>
+
+                <tr onClick='toggleRow(this)' class="rotate">
+                  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+                  <td><strong>TITLE: </strong>orem ipsum</td>
+              <td><strong>NAME: </strong>sit amet, consectetur </td>
+              <td><strong>BORN: </strong>adipiscing elit</td>
+              <td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+              <td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+              </td>
+              <td class="expanded-row-content hide-row">
+                <span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+                <strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                <br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                <br /><br />
+            
+              </td>
+            </tr>
+
+            <tr onClick='toggleRow(this)' class="rotate">
+              <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+              <td><strong>TITLE: </strong>orem ipsum</td>
+          <td><strong>NAME: </strong>sit amet, consectetur </td>
+          <td><strong>BORN: </strong>adipiscing elit</td>
+          <td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+          <td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+          </td>
+          <td class="expanded-row-content hide-row">
+            <span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+            <strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+            <br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+            <br /><br />
+        
+          </td>
+        </tr>
+
+        <tr onClick='toggleRow(this)' class="rotate">
+          <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+          <td><strong>TITLE: </strong>orem ipsum</td>
+      <td><strong>NAME: </strong>sit amet, consectetur </td>
+      <td><strong>BORN: </strong>adipiscing elit</td>
+      <td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+      <td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+      </td>
+      <td class="expanded-row-content hide-row">
+        <span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+        <strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+        <br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+        <br /><br />
+    
+      </td>
+    </tr>
+
+    <tr onClick='toggleRow(this)' class="rotate">
+      <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+      <td><strong>TITLE: </strong>orem ipsum</td>
+  <td><strong>NAME: </strong>sit amet, consectetur </td>
+  <td><strong>BORN: </strong>adipiscing elit</td>
+  <td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+  <td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+  </td>
+  <td class="expanded-row-content hide-row">
+    <span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+    <strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+    <br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+    <br /><br />
+
+  </td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+
+<tr onClick='toggleRow(this)' class="rotate">
+  <td><div class="sy" >+</div><div class="hidden sy2" >−</div></td>
+  <td><strong>TITLE: </strong>orem ipsum</td>
+<td><strong>NAME: </strong>sit amet, consectetur </td>
+<td><strong>BORN: </strong>adipiscing elit</td>
+<td class="item2"><strong>LAST KNOWN STATUS: </strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+<td class="desktop mobile"><strong>LISTS: </strong><span><a href="" target="_blank">only see mee when on desktop</a></span>
+</td>
+<td class="expanded-row-content hide-row">
+<span class="hyperlinks"><a href="" target="_blank">LISTS: only see mee when on mobile</a></span><br />
+<strong>KNOWN MARYLAND ASSIGNMENTS: </strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br /> <strong>ACCUSATION DESCRIPTION: </strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+<br /><br />
+
+</td>
+</tr>
+                
+              </tbody>
+            </table>
 
       
       </div>
@@ -364,9 +1474,9 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
       
       
             for (i = 0; i < tr.length; i++) {
-              td = tr[i].getElementsByTagName("td")[1];
-              td2 = tr[i].getElementsByTagName("td")[0];
-              td1 = tr[i].getElementsByTagName("td")[4];
+              td = tr[i].getElementsByTagName("td")[2];
+              td2 = tr[i].getElementsByTagName("td")[1];
+              td1 = tr[i].getElementsByTagName("td")[6];
               
               if (td && td1 && td2) {
                   name = (td.textContent || td.innerText).toUpperCase();
